@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 
 from modulos.seguridad import urls as urls_seguridad
-# from modulos.servicio import urls as urls_servicio
+from modulos.servicio import urls as urls_servicio
 # from modulos.direccion import urls as urls_direccion
 # from modulos.personal import urls as urls_personal
 
@@ -26,7 +26,7 @@ from modulos.seguridad import urls as urls_seguridad
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('seguridad/', include(urls_seguridad)),
-    # path('servicio/', include(urls_servicio)),
+    path('servicio/', include(urls_servicio)),
     # path('direccion/', include(urls_direccion)),
     # path('personal/', include(urls_personal)),
 ]
