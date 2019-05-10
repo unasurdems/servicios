@@ -156,3 +156,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
+
+TOKEN_SERVICIO = '81f70c520404029905a2e5915b53cfd0fb025d85'
